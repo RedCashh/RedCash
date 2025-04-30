@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el archivo CSS -->
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a Mi Sitio Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#register">Registro</a></li>
+        <li><a href="#login">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Bienvenido</h2>
+      <p>Esta es una plataforma para ganar dinero mediante referidos.</p>
+    </section>
+
+    <section id="register">
+      <h2>Registrarse</h2>
+      <form id="registrationForm">
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+
+    <section id="login">
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Correo electrónico" required>
+        <input type="password" id="loginPassword" placeholder="Contraseña" required>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web</p>
+  </footer>
+
+  <script src="app.js"></script> <!-- Enlazamos el archivo JavaScript -->
+</body>
+</html>

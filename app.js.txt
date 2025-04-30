@@ -1,0 +1,29 @@
+// app.js
+
+// Manejar registro de usuario
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  
+  // Aquí deberías agregar la lógica para registrar el usuario en Firebase
+  console.log('Registrando usuario con correo:', email);
+  
+  // Limpiar los campos
+  document.getElementById('registrationForm').reset();
+});
+
+// Manejar inicio de sesión
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+  
+  // Aquí deberías agregar la lógica para iniciar sesión en Firebase
+  console.log('Iniciando sesión con correo:', email);
+  
+  // Limpiar los campos
+  document.getElementById('loginForm').reset();
+});
